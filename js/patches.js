@@ -5,6 +5,7 @@
     if (!links.length || !target) return;
     links.forEach(function (link) {
         link.addEventListener('click', function (e) {
+              e.preventDefault();
             try { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
             catch (err) { target.scrollIntoView(); }
             target.setAttribute('tabindex', '-1');
@@ -19,6 +20,7 @@
     if (!links.length || !target) return;
     links.forEach(function (link) {
         link.addEventListener('click', function (e) {
+              e.preventDefault();
             try {
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 
