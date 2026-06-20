@@ -1,0 +1,408 @@
+/*
+    Not optimized well for desktop, image is off center.
+*/
+@font-face {
+    font-family: isaSelection; 
+    src: url('fonts/GeorgiaPro.ttf'); 
+    src: url('fonts/GeorgiaPro.ttf') format('embedded-opentype'), 
+    url('fonts/GeorgiaPro.ttf') format('woff'), 
+    url('fonts/GeorgiaPro.ttf') format('truetype'), 
+    url('fonts/GeorgiaPro.ttf') format('svg'); 
+    font-style: italic !important;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: cornflowerblue;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: cornflowerblue;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+    a:hover {
+        color: #444;
+    }
+
+p {
+    margin-bottom: 20px;
+}
+
+.fh5co-cover {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+    .fh5co-cover .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+    .fh5co-cover .display-t,
+    .fh5co-cover .display-tc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+        height: auto;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+.topHeader {
+    font-family: isaSelection;
+    letter-spacing: 6px;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.names {
+    font-family: "Luxurious Script", cursive;
+    letter-spacing: 4px;
+    color: cornflowerblue;
+}
+
+.long-name {
+    font-family: "Luxurious Script", cursive;
+ 
+    color: cornflowerblue;
+}
+
+.date {
+    font-family: isaSelection;
+    font-size: 11px;
+    letter-spacing: 6px;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+.text-location {
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    color: #4A7EBB; 
+    text-align: center;
+    font-weight: 300;
+    font-family: "Cormorant Garamond", serif;
+    text-shadow: 0 1px 2px rgba(74, 126, 187, 0.25);
+    text-align: center;
+}
+
+/* TOP SECTION */
+.fh5co-sections {
+    background-image: url('../images/section-bg.png') !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    border: 2px solid cornflowerblue;
+    border-radius: 1px;
+}
+
+/* BOTTOM SECTION */
+.fh5co-sections2 {
+    background-image: url('../images/section-bg.png') !important;
+    background-size: cover !important;
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+    background-color: #fff;
+    border: 2px solid cornflowerblue;
+    border-radius: 1px;
+}
+
+
+.weddingButton {
+    display: inline-block;
+    padding: 12px 22px;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid cornflowerblue;
+    border-radius: 8px;
+    color: cornflowerblue;
+    font-size: 16px;
+    margin: 6px;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+
+    .weddingButton:hover {
+        background: transparent;
+    }
+
+.weddingButton {
+    width: 35%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.text-info {
+    font-size: 12px;
+    color: cornflowerblue;
+    text-align: center;
+    margin: 10px 50px;
+}
+
+.text-schedule {
+    font-size: 17px;
+    color: cornflowerblue;
+    text-align-last: center;
+    margin-top: -20px !important;
+    text-align: center;
+}
+
+.text-sections {
+    font-size: 34px;
+    letter-spacing: 6px;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0;
+    text-underline-position: under;
+    padding: 4rem 3rem;
+    letter-spacing: 10px;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: cornflowerblue;
+}
+
+.text-location {
+    text-align: center;
+}
+
+.glass-overlay {
+    position: center;
+    padding: 2rem 2.5rem;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(1.2px);
+    -webkit-backdrop-filter: blur(1.2px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.mapholer {
+    width: 80% !important;
+    max-width: 100% !important;
+    height: 240px !important;
+    border: none;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto !important
+}
+
+.timeline {
+    list-style: none;
+    padding: 20px 0;
+    position: relative;
+}
+
+    .timeline:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        background: #d4d4d4;
+        top: 0;
+        bottom: 0;
+    }
+
+    .timeline > li {
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+.timeline-panel {
+    width: 45%;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.timeline-badge {
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.offcanvas #page:after {
+    display: none !important;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .topHeader {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .names {
+        font-size: 40px !important;
+        letter-spacing: 1px;
+    }
+    .long-name {
+        font-size: 37px !important;
+        letter-spacing: 1px;
+    }
+
+    .date {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    .weddingButton {
+        display: inline-block;
+        padding: 12px 22px;
+        background: rgba(255,255,255,0.75);
+        border: 1px solid cornflowerblue;
+        border-radius: 8px;
+        color: cornflowerblue;
+        font-family: allText;
+        font-size: 18px;
+        margin: 6px;
+        transition: 0.3s ease;
+    }
+
+    .weddingButton {
+        width: 70%;
+        text-align: center;
+        font-size: 16px;
+    }
+        .weddingButton:hover {
+            background: transparent;
+        }
+        .weddingButton::selection {
+            background: cornflowerblue;
+          
+        }
+   
+    .text-info {
+        font-size: 16px;
+        color: cornflowerblue;
+        text-align: center;
+        margin-top: -10px !important;
+        font-family: isaSelection;
+    }
+    .text-schedule {
+        font-size: 20px;
+        font-style: normal;
+        color: cornflowerblue;
+        margin-top: -20px !important;
+        font-family: isaSelection;
+    }
+
+    
+    .text-sections {
+        font-family: isaSelection;
+        font-size: 24px;
+        letter-spacing: 10px;
+        color: cornflowerblue;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration-line: underline;
+        text-decoration-style: double;
+        text-decoration-color: cornflowerblue;
+    }
+
+    .text-location {
+        font-size: 15px;
+        text-align: center;
+        font-family: isaSelection;
+        margin: 2px 0; 
+        padding: 0;
+        line-height: 1.2;
+    }
+
+    .iframe {
+        width: 100%;
+        height: 350px;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.35);
+        backdrop-filter: blur(6px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .fh5co-sections {
+        background-image: url('../images/section-bg.png') !important;
+        background-size: cover !important; 
+        background-position: top !important;
+        background-repeat: no-repeat !important;
+        background-color: #fff; 
+    }
+
+    .fh5co-sections2 {
+        background-image: url('../images/section-bg.png') !important;
+        background-size: cover !important; 
+        background-position: bottom !important;
+        background-repeat: no-repeat !important;
+        background-color: #fff; 
+    }
+
+    .timeline:before {
+        left: 20px;
+    }
+
+    .timeline-panel {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+
+    .timeline-badge {
+        width: 60px;
+        height: 60px;
+        left: 20px;
+        transform: none;
+    }
+}
+.days-only-display {
+    color: cornflowerblue;
+    text-align: center;
+}
+    .days-only-display .days-value {
+        display: block;
+        font-style: normal;
+        font-size: 25px !important;
+        color: cornflowerblue !important;
+        text-transform: uppercase;
+        
+    }
+    .days-only-display .days-label {
+        display: block;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-size: 11px !important;
+        letter-spacing: 3px !important;
+        color: cornflowerblue !important;
+        text-transform: uppercase;
+        text-decoration-line: underline
+    }
+    
