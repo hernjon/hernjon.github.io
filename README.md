@@ -1,4 +1,4 @@
-# Wedding Website - Jonathan & Isabella
+# Wedding Website - Jonathan & Isabel
 
 ## Features
 - Hero section with countdown timer  
