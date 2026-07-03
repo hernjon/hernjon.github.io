@@ -254,7 +254,7 @@ p {
     }
     .days-only-display .days-label {
     display: block;
-    font-size: 13x;
+    font-size: 13px;
     text-transform: uppercase;
     text-decoration-line: underline;
     text-decoration-style: double;
@@ -364,11 +364,14 @@ p {
     }
 
     .fh5co-sections {
-        background-image: url('../images/phone-landing.jpg');  
-        background-size: cover; 
-        background-position: top;
-        background-repeat: no-repeat;
-        background-color: #fff; 
+    background-image: url('../images/phone-landing.jpg');  
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
     }
 
     .timeline:before {
