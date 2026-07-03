@@ -158,6 +158,7 @@ p {
     background-image: url('../images/desktop-landing.png');
     background-repeat: no-repeat;
     background-position: top;
+
 }
 
 
@@ -264,7 +265,14 @@ p {
 
 @media (max-width: 480px) {
     .fh5co-cover {
-    background-image: url('../images/phone-landing.jpg');  
+        background-image: url('../images/phone-landing.jpg');
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
     }
     .topHeader {
         font-size: 20px;
@@ -364,14 +372,11 @@ p {
     }
 
     .fh5co-sections {
-    background-image: url('../images/phone-landing.jpg');  
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+        background-image: url('../images/phone-landing.jpg');  
+        background-size: cover; 
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #fff; 
     }
 
     .timeline:before {
