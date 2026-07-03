@@ -43,14 +43,14 @@ p {
 
 .fh5co-cover {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100svh;
+    min-height: -webkit-fill-available;
     height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     background-image: url('../images/desktop-landing.png');
-
 }
 
     .fh5co-cover .overlay {
@@ -260,40 +260,23 @@ p {
     text-decoration-line: underline;
     text-decoration-style: double;
     }
-    
+
 
 
 @media (max-width: 480px) {
-
     .fh5co-cover {
         background-image: url('../images/phone-landing.jpg');
         width: 100%;
-        min-height: 100vh;
+        min-height: 100svh;
+        min-height: -webkit-fill-available;
         height: auto;
         background-size: cover;
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         position: relative;
-
-        .fh5co-cover .overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(255, 255, 255, 0.18);
-        }
-
-        .fh5co-cover .display-t,
-        .fh5co-cover .display-tc {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 60px 20px;
-            height: auto;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
     }
+
+
     .topHeader {
         font-size: 20px;
         letter-spacing: 3px;
