@@ -263,7 +263,7 @@ p {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .fh5co-cover {
         background-image: url('../images/phone-landing.jpg');
         width: 100%;
