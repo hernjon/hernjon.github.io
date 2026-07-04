@@ -10,6 +10,3 @@
 - HTML5  
 - CSS3 / Bootstrap 5.3.8  
 - JavaScript (countdown)  
-
-## Issues 
-- Not formatted well for Desktop view (preference) 
