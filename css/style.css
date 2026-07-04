@@ -259,10 +259,17 @@ body.offcanvas #page:after {
 /* MOBILE */
 @media (max-width: 480px) {
     .fh5co-cover {
+        min-height: 120vh;
+        height: auto;
         background-image: url('../images/phone-landing.jpg');
-        background-size: cover;
-        background-position: top;
+        background-size: 100% auto;
+        background-position: center top;
         background-repeat: no-repeat;
+    }
+
+    .fh5co-cover .display-t,
+    .fh5co-cover .display-tc {
+        padding: 24px 16px 12px;
     }
 
     .days-container {
@@ -392,6 +399,8 @@ body.offcanvas #page:after {
     .fh5co-sections {
         background-image: url('../images/section-bg.png');
         background-size: cover;
+        background-position: center;
+        
     }
 
     .timeline:before {
