@@ -1,6 +1,8 @@
 /*
-    Not optimized well for desktop, image is off center.
+    Desktop view first, then other.
 */
+
+
 @font-face {
     font-family: isaSelection; 
     src: url('fonts/GeorgiaPro.ttf'); 
@@ -34,21 +36,21 @@ p {
     margin-bottom: 20px;
 }
 
-.fh5co-cover {
-    width: 100%;
-    min-height: 100vh;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
 
+
+.fh5co-cover {
+width: 100%;
+min-height: 100vh;
+height: auto;
+background-image: url('../images/desktop-landing.png');
+background-size: cover;     
+background-position: center;  
+background-repeat: no-repeat;  
+
+}
     .fh5co-cover .overlay {
         position: absolute;
         inset: 0;
-        background: rgba(255, 255, 255, 0.18);
-  
     }
     .fh5co-cover .display-t,
     .fh5co-cover .display-tc {
@@ -68,29 +70,32 @@ p {
     letter-spacing: 6px;
     color: cornflowerblue;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 27px;
 }
 
 .names {
     font-family: "Luxurious Script", cursive;
     letter-spacing: 4px;
     color: cornflowerblue;
+    font-size: 63px;
 }
 
 .long-name {
     font-family: "Luxurious Script", cursive;
- 
     color: cornflowerblue;
+    font-size: 63px;
 }
 
 .date {
     font-family: isaSelection;
-    font-size: 11px;
     letter-spacing: 6px;
     color: cornflowerblue;
     text-transform: uppercase;
     margin-top: 10px;
+    font-size: 18px;
+
 }
+
 
 
 .text-location {
@@ -98,56 +103,32 @@ p {
     letter-spacing: 1.5px;
     color: #4A7EBB; 
     text-align: center;
-    font-weight: 300;
-    font-family: "Cormorant Garamond", serif;
-    text-shadow: 0 1px 2px rgba(74, 126, 187, 0.25);
-    text-align: center;
+    font-family: isaSelection;
+
 }
 
-/* TOP SECTION */
+
 .fh5co-sections {
-    background-image: url('../images/phone-landing.jpg') !important;
-    background-size: cover !important;
-    background-position: center top !important;
-    background-repeat: no-repeat !important;
-    border: 2px solid cornflowerblue;
-    border-radius: 1px;
+    background-image: url('../images/section-bg.png');
+    background-size: cover;
 }
 
-/* BOTTOM SECTION */
-.fh5co-sections2 {
-    background-image: url('../images/section-bg.png') !important;
-    background-size: cover !important;
-    background-position: center bottom !important;
-    background-repeat: no-repeat !important;
-    background-color: #fff;
-    border: 2px solid cornflowerblue;
-    border-radius: 1px;
-}
 
 
 .weddingButton {
-    display: inline-block;
+    display:inline-block;
     padding: 12px 22px;
     background: rgba(255,255,255,0.10);
     border: 1px solid cornflowerblue;
-    border-radius: 8px;
+    border-radius: 60px;
     color: cornflowerblue;
     font-size: 16px;
-    margin: 6px;
     transition: 0.3s ease;
     text-transform: uppercase;
 }
-
     .weddingButton:hover {
         background: transparent;
     }
-
-.weddingButton {
-    width: 35%;
-    text-align: center;
-    font-size: 16px;
-}
 
 .text-info {
     font-size: 12px;
@@ -160,7 +141,7 @@ p {
     font-size: 17px;
     color: cornflowerblue;
     text-align-last: center;
-    margin-top: -20px !important;
+    margin-top: -20px;
     text-align: center;
 }
 
@@ -177,34 +158,42 @@ p {
     color: cornflowerblue;
     text-transform: uppercase;
     text-align: center;
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    text-decoration-color: cornflowerblue;
 }
 
 .text-location {
     text-align: center;
 }
 
-.glass-overlay {
-    position: center;
-    padding: 2rem 2.5rem;
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(1.2px);
-    -webkit-backdrop-filter: blur(1.2px);
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 0 1px rgba(255, 255, 255, 0.08);
-}
 
-.mapholer {
-    width: 80% !important;
-    max-width: 100% !important;
-    height: 240px !important;
-    border: none;
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto !important
+.days-container {
+    color: cornflowerblue;
+    text-align: center;
 }
+    .days-container .days-value {
+        display: block;
+        font-style: normal;
+        font-size: 35px;
+        color: cornflowerblue;
+        text-transform: uppercase;
+         font-family: isaSelection;
+         letter-spacing: 6px;
+
+        
+    }
+    .days-container .days-label {
+        display: block;
+        letter-spacing: 2px;
+        font-size: 22px;
+        letter-spacing: 3px;
+        color: cornflowerblue;
+        font-family: isaSelection;
+    
+        text-decoration-color: cornflowerblue;
+   
+    }
+    
+
+
 
 .timeline {
     list-style: none;
@@ -262,11 +251,11 @@ body.offcanvas #page:after {
     }
 
     .names {
-        font-size: 40px !important;
+        font-size: 40px;
         letter-spacing: 1px;
     }
     .long-name {
-        font-size: 37px !important;
+        font-size: 37px;
         letter-spacing: 1px;
     }
 
@@ -305,17 +294,15 @@ body.offcanvas #page:after {
         font-size: 16px;
         color: cornflowerblue;
         text-align: center;
-        margin-top: -10px !important;
+        margin-top: -10px;
         font-family: isaSelection;
     }
     .text-schedule {
         font-size: 20px;
         font-style: normal;
         color: cornflowerblue;
-        margin-top: -20px !important;
+        margin-top: -20px;
         letter-spacing: 1.5px;
-        font-family: "Cormorant Garamond", serif;
-        text-shadow: 0 1px 2px rgba(74, 126, 187, 0.25);
         text-align: center;
     }
 
@@ -354,19 +341,8 @@ body.offcanvas #page:after {
     }
 
     .fh5co-sections {
-        background-image: url('../images/section-bg.png') !important;
-        background-size: cover !important; 
-        background-position: top !important;
-        background-repeat: no-repeat !important;
-        background-color: #fff; 
-    }
-
-    .fh5co-sections2 {
-        background-image: url('../images/section-bg.png') !important;
-        background-size: cover !important; 
-        background-position: bottom !important;
-        background-repeat: no-repeat !important;
-        background-color: #fff; 
+        background-image: url('../images/section-bg.png');
+        background-size: cover;
     }
 
     .timeline:before {
@@ -385,26 +361,3 @@ body.offcanvas #page:after {
         transform: none;
     }
 }
-.days-only-display {
-    color: cornflowerblue;
-    text-align: center;
-}
-    .days-only-display .days-value {
-        display: block;
-        font-style: normal;
-        font-size: 25px !important;
-        color: cornflowerblue !important;
-        text-transform: uppercase;
-        
-    }
-    .days-only-display .days-label {
-        display: block;
-        font-size: 18px;
-        letter-spacing: 2px;
-        font-size: 11px !important;
-        letter-spacing: 3px !important;
-        color: cornflowerblue !important;
-        text-transform: uppercase;
-        text-decoration-line: underline
-    }
-    
