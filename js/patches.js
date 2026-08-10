@@ -45,7 +45,7 @@
     function updateDaysLeft() {
         const now = new Date();
         const diffTime = weddingDate - now;
-        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
         const findTextCSS = document.querySelector(".days-value");
         if (findTextCSS) {
             if (diffDays === 0) {
