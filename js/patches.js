@@ -40,7 +40,7 @@
 })();
 /** Days shown*/
 (function () { 
-    const weddingDate = new Date("2026-09-12T00:00:00");
+    const weddingDate = new Date("2026-09-12T12:00:00");
     //weddingDate = new Date(Date.now()); Test code for TODAY.
     function updateDaysLeft() {
         const now = new Date();
