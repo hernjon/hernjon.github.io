@@ -259,7 +259,7 @@ body.offcanvas #page:after {
 /* MOBILE */
 @media (max-width: 480px) {
     .fh5co-cover {
-        min-height: 120vh;
+        min-height: 90vh;
         height: auto;
         background-image: url('../images/phone-landing.jpg');
         background-size: 100% auto;
