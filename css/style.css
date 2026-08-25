@@ -259,7 +259,7 @@ body.offcanvas #page:after {
 /* MOBILE */
 @media (max-width: 480px) {
     .fh5co-cover {
-        min-height: 90vh;
+        min-height: 91vh;
         height: auto;
         background-image: url('../images/phone-landing.jpg');
         background-size: 100% auto;
@@ -346,7 +346,7 @@ body.offcanvas #page:after {
     }
 
     .text-info {
-        font-size: 16px;
+        font-size: 18px;
         color: cornflowerblue;
         text-align: center;
         margin-top: -10px;
