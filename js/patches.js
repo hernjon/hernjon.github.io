@@ -49,7 +49,7 @@
         const findTextCSS = document.querySelector(".days-value");
         if (findTextCSS) {
             if (diffDays === 0) {
-                findTextCSS.textContent = "TODAY";
+                findTextCSS.textContent = "0";
             } else if (diffDays < 0) {
                 findTextCSS.textContent = "0";
             } else {
